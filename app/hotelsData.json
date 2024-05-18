@@ -1,0 +1,74 @@
+[
+  {
+    "type": "Single",
+    "description": "Cozy room with a single bed",
+    "number_of_rooms": 1,
+    "area": 8,
+    "bed_type": "1 single bed",
+    "amenities": ["internet", "air conditioning", "television"],
+    "pets_allowed": true,
+    "price_per_day": 100,
+    "max_occupancy": 1,
+    "image": "/single-room.jpg"
+  },
+  {
+    "type": "Double",
+    "description": "Spacious room with two single beds or one double bed",
+    "number_of_rooms": 2,
+    "area": 13,
+    "bed_type": "2 single beds or 1 double bed",
+    "amenities": ["internet", "air conditioning", "television"],
+    "pets_allowed": true,
+    "price_per_day": 150,
+    "max_occupancy": 2,
+    "image": "/double-room.jpg"
+  },
+  {
+    "type": "Family",
+    "description": "Large family room with 2 double beds and 2 single beds or 2 double beds",
+    "number_of_rooms": 3,
+    "area": 18,
+    "bed_type": "2 double beds and 2 single beds or 2 double beds",
+    "amenities": ["internet", "air conditioning", "television"],
+    "pets_allowed": true,
+    "price_per_day": 200,
+    "max_occupancy": 4,
+    "image": "/family-room.jpg"
+  },
+  {
+    "type": "Deluxe",
+    "description": "Luxurious room with 2 single beds and 1 sofa bed",
+    "number_of_rooms": 3,
+    "area": 30,
+    "bed_type": "2 single beds and 1 sofa bed",
+    "amenities": ["internet", "air conditioning", "television"],
+    "pets_allowed": true,
+    "price_per_day": 250,
+    "max_occupancy": 3,
+    "image": "/deluxe-room.jpg"
+  },
+  {
+    "type": "Deluxe Plus",
+    "description": "Exclusive room with 2 single beds, 1 single bed, and 1 sofa",
+    "number_of_rooms": 4,
+    "area": 45,
+    "bed_type": "2 single beds, 1 single bed, 1 sofa",
+    "amenities": ["internet", "air conditioning", "television"],
+    "pets_allowed": true,
+    "price_per_day": 300,
+    "max_occupancy": 5,
+    "image": "/deluxe-plus-room.jpg"
+  },
+  {
+    "type": "Premium",
+    "description": "Premium room with 2 double beds and 2 sofas",
+    "number_of_rooms": 4,
+    "area": 70,
+    "bed_type": "2 double beds, 2 sofas",
+    "amenities": ["internet", "air conditioning", "television"],
+    "pets_allowed": true,
+    "price_per_day": 350,
+    "max_occupancy": 6,
+    "image": "/premium-room.jpg"
+  }
+]
