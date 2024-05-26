@@ -1,13 +1,22 @@
 'use client';
-import React from 'react';
+import React, {Suspense} from 'react';
 import {useSearchParams} from 'next/navigation';
 import hotelsData from '../../hotelsData.json';
 
 import './search.css';
 import Link from 'next/link';
 import Header from '@/app/Components/Header/Header';
+import Image from 'next/image';
 
-export default function Hotel() {
+export default function Hotel_Suspense() {
+	return (
+		<Suspense fallback={<div>Loading...</div>}>
+			<Hotel />
+		</Suspense>
+	);
+}
+
+export function Hotel() {
 	const searchParams = useSearchParams();
 
 	const startDate = searchParams.get('startDate');
@@ -59,7 +68,7 @@ export function HotelCard({room, startDate, endDate, guestCount}) {
 		''
 	) : (
 		<div className='hotel-card'>
-			<img src={room.image} alt={`${room.type} room`} className='room-image' />
+			<Image width={300} height={200} src={room.image} alt={`${room.type} room`} className='room-image'></Image>
 			<h2 className='room-name'>{room.type} Room</h2>
 			<p className='room-count'>Number of rooms: {room.number_of_rooms}</p>
 			<p className='area-value'>Area: {room.area} m²</p>
