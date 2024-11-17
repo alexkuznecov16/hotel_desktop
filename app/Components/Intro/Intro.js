@@ -65,9 +65,19 @@ export default function Intro() {
 		}
 	};
 
+	const openModal = () => {
+		document.body.style.overflow = 'hidden';
+		setGuestOpen(true);
+	};
+
+	const closeModal = () => {
+		document.body.style.overflow = '';
+		setGuestOpen(false);
+	};
+
 	return (
 		<div className='Intro'>
-			<Image width={500} height={50} src={'/wave.png'} alt='wave' className='wave'></Image>
+			<Image width={500} height={50} src={'/wave.png'} alt='wave' className='wave' />
 			<div className='container'>
 				<div className='Intro__inner'>
 					<div className='Intro__filter--block'>
@@ -86,11 +96,11 @@ export default function Intro() {
 						<div className='filter--item'>
 							<label htmlFor='input3'>Guest count</label>
 							<div className='input__inner'>
-								<input className='number-input' required readOnly onClick={() => setGuestOpen(true)} id='input3' placeholder='0' type='number' />
+								<input className='number-input' required readOnly onClick={() => openModal()} id='input3' placeholder='0' type='number' />
 								<BsPeopleFill />
 								{isGuestOpen ? (
 									<div className='guest__modal'>
-										<IoMdClose className='close__guest' onClick={() => setGuestOpen(false)} />
+										<IoMdClose className='close__guest' onClick={() => closeModal()} />
 										<label htmlFor='guest1'>Children</label>
 										<div className='input__inner'>
 											<input required onChange={e => setChildrenCount(e.target.value)} id='guest1' min={0} max={4} placeholder='0' type='number' />

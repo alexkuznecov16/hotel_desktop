@@ -6,6 +6,9 @@ const inter = Inter({subsets: ['latin']});
 export const metadata = {
 	title: 'Hotel',
 	description: 'Created by Alexander',
+	icons: {
+		icon: '/hotel.ico',
+	},
 };
 
 export default function RootLayout({children}) {

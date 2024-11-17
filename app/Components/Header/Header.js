@@ -33,7 +33,7 @@ export default function Header() {
 							<Link href={'/rooms'} className='nav--link'>
 								ROOMS
 							</Link>
-							<Link href={'#'} className='nav--link'>
+							<Link href={'/about'} className='nav--link'>
 								INFO
 							</Link>
 						</nav>
